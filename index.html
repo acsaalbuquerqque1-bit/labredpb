@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Laboratório de Redação</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<main>
+  <section id="login" class="card login"><h1>Laboratório de Redação</h1><p>EEMTI Deputado Paulo Benevides</p>
+    <form id="loginForm"><label>E-mail<input id="email" type="email" required></label><label>Senha<input id="password" type="password" required></label><button>Entrar</button><p id="loginError" class="error"></p></form>
+  </section>
+  <section id="app" hidden>
+    <header><div><h1>Laboratório de Redação</h1><p>EEMTI Deputado Paulo Benevides</p></div><button id="logout" class="secondary">Sair</button></header>
+    <nav><button data-view="dashboard">Visão geral</button><button data-view="essays">Propostas</button><button data-view="scores">Lançar notas</button><button id="usersTab" data-view="users">Professores</button></nav>
+    <div id="content" class="card"></div>
+  </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="/config.js"></script>
+<script src="/app.js"></script></body></html>
